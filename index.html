@@ -1,12 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maplibre + cypress</title>
-  </head>
-  <body>
-    <div id="dev-map"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <link rel="icon" href="data:," />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geoman plugin</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    #map-container {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: 600px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="dev-map"></div>
+  <h1>Map in iframe</h1>
+  <iframe id="map-container" src="/map.html"></iframe>
+  <script type="module" src="/src/main.ts"></script>
+</body>
 </html>
